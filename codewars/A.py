@@ -32,3 +32,12 @@ def check(seq, elem):
         if i == elem:
             return True
     return False
+
+def string_to_array(s):
+    return s.split(' ')
+
+def reverse_seq(n):
+    arr = []
+    for i in range(n, 0, -1):
+        arr.append(i)
+    return arr
