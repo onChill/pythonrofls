@@ -1,4 +1,4 @@
-# 15 задач
+# 10 задач
 
 def square_sum(numbers):
     sum = 0
