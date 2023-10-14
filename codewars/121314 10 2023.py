@@ -3,12 +3,6 @@
 def make_upper_case(strng):
     return strng.upper()
 
-def make_upper_case(strng):
-    return strng.upper()
-
-def check_for_factor(base, factor):
-    return base % factor == 0
-
 def check_for_factor(base, factor):
     return base % factor == 0
 
@@ -54,3 +48,8 @@ def basic_op(operator, value1, value2):
         return value1*value2
 
   
+def maps(a):
+    num = []
+    for i in a:
+        num.append(i * 2)
+    return num
