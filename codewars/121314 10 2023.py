@@ -159,8 +159,21 @@ def sale_hotdogs(n):
         return 0
 
 
+def powers_of_two(n):
+    a = []
+    for i in range(0, n + 1):
+        a.append(2 ** i)    
+    return a
 
+def find_average(array):
+    if len(array) != 0:
+        return sum(array) / len(array)
+    else:
+        return 0
 
-
+def first_non_consecutive(arr):
+    for n in arr:
+        if n != arr.index(n)+arr[0]:
+            return n
 
 
