@@ -123,10 +123,40 @@ def make_negative(number):
     return number if number <= 0 else number * -1
 
 
+def greet(name, owner):
+    if name == owner:
+        return "Hello boss"
+    else:
+        return "Hello guest"
 
 
+def abbrevName(name):
+    first, last = name.upper().split(' ')
+    return first[0] + '.' + last[0]
+
+def expression_matter(a, b, c):
+    if 1 not in [a, b, c]:
+        return a * b * c
+    elif a == 1 and c == 1:
+        return a + b + c
+    elif a == 1 or (b == 1 and a < c):
+        return (a + b) * c
+    else:
+        return a * (b + c)
 
 
+def find_needle(haystack):
+    return "found the needle at position " + str(haystack.index("needle"))
+
+def sale_hotdogs(n):
+    if n < 5 and n>0:
+        return n*100
+    elif n>=5 and n<10:
+        return n*95
+    elif n>=10:
+        return n*90
+    else:
+        return 0
 
 
 
