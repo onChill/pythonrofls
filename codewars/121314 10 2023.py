@@ -81,7 +81,30 @@ def str_count(strng, letter):
     return counter
 
 
+def sum_str(a,b):
+  a = int(a) if a else 0
+  b = int(b) if b else 0
+  return str(a+b)
 
+def count_sheep(n):
+    s = ""
+    i = 1
+    while i <= n:
+        s += str(i)+" sheep..."
+        i += 1
+    return s
+
+def solution(string):
+  return string[::-1]
+
+def square(n):
+    return n*n
+
+def hoopCount(n):
+    if n >= 10:
+        return 'Great, now move on to tricks'
+    else:
+        return 'Keep at it until you get it'
 
 
 
