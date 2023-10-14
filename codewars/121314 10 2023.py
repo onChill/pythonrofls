@@ -13,10 +13,8 @@ def grow(arr):
 	return product
 
 def human_years_cat_years_dog_years(human_years):
-    # Your code here
     catYears = 0
     dogYears = 0
-    
     if human_years < 2:
         catYears = human_years * 15
         dogYears = catYears
@@ -53,3 +51,48 @@ def maps(a):
     for i in a:
         num.append(i * 2)
     return num
+
+
+def switch_it_up(n):
+    match n:
+        case 0:return'Zero'
+        case 1:return'One'
+        case 2:return'Two'
+        case 3:return'Three'
+        case 4:return'Four'
+        case 5:return'Five'
+        case 6:return'Six'
+        case 7:return'Seven'
+        case 8:return'Eight'
+        case 9:return'Nine'
+
+
+def past(h, m, s):
+    return 3600000 * h + 60000 * m + 1000 * s
+
+def is_palindrome(s):
+    return s.lower() == s.lower()[::-1]
+
+def str_count(strng, letter):
+    counter = 0
+    for chr in strng:
+        if chr == letter:
+            counter += 1
+    return counter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
