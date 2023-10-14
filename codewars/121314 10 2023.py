@@ -106,6 +106,21 @@ def hoopCount(n):
     else:
         return 'Keep at it until you get it'
 
+def cockroach_speed(s):
+    return s // 0.036
+
+def century(year):
+    return (year + 99) // 100
+
+def sum_array(a):
+    sum = 0
+    for i in a:
+        sum += i
+    return sum
+
+
+def make_negative(number):
+    return number if number <= 0 else number * -1
 
 
 
